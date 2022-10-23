@@ -1,4 +1,4 @@
-module decoder_gray
+module converter_gray
 #(
   parameter WIDTH = 8
 )

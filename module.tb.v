@@ -1,14 +1,14 @@
 `timescale 1ns/1ps
 `include "module.v"
 
-module decoder_gray_tb ();
+module converter_gray_tb ();
 
   reg [2:0] en;
   reg [7:0] data_in;
 
   wire [7:0] data_out;
 
-  decoder_gray U_dec (
+  converter_gray U_dec (
     .en_i (en),
     .data_i (data_in),
     .data_o (data_out)
@@ -17,7 +17,7 @@ module decoder_gray_tb ();
   integer i;
   initial begin
     $dumpfile("tb.vcd");
-    $dumpvars(1, decoder_gray_tb);
+    $dumpvars(1, converter_gray_tb);
 
     en = 3'b100;
 
