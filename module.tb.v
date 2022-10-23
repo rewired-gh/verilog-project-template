@@ -8,7 +8,7 @@ module converter_gray_tb ();
 
   wire [7:0] data_out;
 
-  converter_gray U_dec (
+  converter_gray U_conv (
     .en_i (en),
     .data_i (data_in),
     .data_o (data_out)
